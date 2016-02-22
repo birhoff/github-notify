@@ -4,7 +4,7 @@
   "description": "github notify for pull requests",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,11 @@
     "url": "https://github.com/birhoff/github-notify/issues"
   },
   "homepage": "https://github.com/birhoff/github-notify#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "bluebird": "^3.3.1",
+    "github": "^0.2.4",
+    "lodash": "latest",
+    "minimist": "latest"
   }
 }
