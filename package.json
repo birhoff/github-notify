@@ -1,0 +1,26 @@
+{
+  "name": "github-notify",
+  "version": "1.0.0",
+  "description": "github notify for pull requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/birhoff/github-notify.git"
+  },
+  "keywords": [
+    "github",
+    "notify",
+    "pullrequest"
+  ],
+  "author": "Konstantin Gladkikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/birhoff/github-notify/issues"
+  },
+  "homepage": "https://github.com/birhoff/github-notify#readme",
+  "devDependencies": {
+  }
+}

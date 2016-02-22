@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - "0.12"
+
+sudo: false
+
+env:
+  global:
+    # GH_TOKEN
+    - secure: "iN6aY0FPXDO03eqEGYbq2o/9ttITpJj1vGNzZ0zioQxPym7kC43+vww5Ag5zB/zmRN/vQWnKEMhoFaCAof8lESjxfY5j4FdiptQ41BptvUzyKPetAKZYbAeduyYMx8zHFibsyyrYKbgRDEnzw1mQr/x42TzN1RqzpjzHrbUjyhnXjQNoGe0BO6q2dKlXPDkxVRgLaDqyGfQZAEXyeiEZLvq/40tWDCDvdz4jsX6XtaICFCvYzb+Hr8+Z1H+/33fjJVDcJTAb1EcKskDhFuZT56PMZouXjhmDF/XCMHx/wO6CjwdRqsR0bziNpxgSUALGlA5d2z7BPNgWGm5uTFJVeCf+81dIjRhSzq8nq9MZrvEr6opejGqllINIQ2sz7CwqbEoJ6cIgt1eojg7Q7Yo9ZYtlzCW9djDrWj1ZUzVqOF9LxqtaUtDKYTLIonKsh/ISQ1SDOftj/7xC5lQezUPF84i5zqlpKmSfY71CVxldii4b1YfN1xNZia6s7uhZIR13TZ9h7B/RC15OzHRhjYmVDWXq6N/jMoXZ6AoKmYUCXysc+Lagqq8RDLp+AWrAU9ILlQoQ/CHKunX41pHGdnNWcOMgG+eiydfYH2CaCcHnrSYeuHgTPw7fVUoKbJm8ORnL7SSP7LioKr9HumMW5vuiRo+9KVNz94EmWMGiAYPcDcY="
