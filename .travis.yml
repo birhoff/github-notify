@@ -10,6 +10,9 @@ env:
     # GH_TOKEN
     - secure: "vrfOY41CE4qwI1A4B3XqNyGXYuh6fT0W493dQmRLEVxufIdrzhbOehEYfDgQdZRiqw+2UJ6Yrsp6Y+wEpb75BAF34244pugEX8vMGD6bF6dQn1jqYIjLXs1L1VXIXJnqpN2m1P9D6ZzlD3QPeaWWDNRou31/ZhGvcde+zbcPOirwg2xjSmScZO+1dYlb0FFl2bRb2BmKP5r2xuc+WvAk2diuqbuII5Kzw9uA4B98ZivBzJNMOm7XJwHylpA1E5RhGUPVoSC+bG/2e0ObNJB0sXZOUPhaKgCcyKmjyZGKGHwvr58Vc2iTDvgTsJkxIwb5MBHNlIRti3OLCyWsZ81m+ePpVvdmkuqxJZ34KZS7ha4/E6bERhAtOCZoKXEYgszzd07ZYH9AXKoud3LmllKxTsM8hbnQq2u7Xge6X886TrUhvhj7k+vYD7DL/eUrFsnjeWFTvOKe3kJHnTokHpCCYNAjdvsl/ofiCTgkKXaBNP/EGywjQIPXKC5A4hRmaj71+X0shZr7YqTWlBM4aQ606aGFF57pm47urA1JJMv9WSRCQ65zQdSswp7WpufYFPdKNYG7Cx+kcxZIyEPzgq/lBnlae7y/bcPE4TIz2JkFFuE93+jTpBkPs/6yUyTdpsKHhL/hhnKnnASJlqtMzP3OOKnT2zvhkDSU+JTy7ebGM14="
 
+before_script:
+  - npm install mocha
+
 after_success:
   - node publish.js --id 'success' --message 'success'
   - node publish.js --id 'fail' --message ''
