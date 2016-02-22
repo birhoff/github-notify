@@ -8,4 +8,12 @@ sudo: false
 env:
   global:
     # GH_TOKEN
-    - secure: "iN6aY0FPXDO03eqEGYbq2o/9ttITpJj1vGNzZ0zioQxPym7kC43+vww5Ag5zB/zmRN/vQWnKEMhoFaCAof8lESjxfY5j4FdiptQ41BptvUzyKPetAKZYbAeduyYMx8zHFibsyyrYKbgRDEnzw1mQr/x42TzN1RqzpjzHrbUjyhnXjQNoGe0BO6q2dKlXPDkxVRgLaDqyGfQZAEXyeiEZLvq/40tWDCDvdz4jsX6XtaICFCvYzb+Hr8+Z1H+/33fjJVDcJTAb1EcKskDhFuZT56PMZouXjhmDF/XCMHx/wO6CjwdRqsR0bziNpxgSUALGlA5d2z7BPNgWGm5uTFJVeCf+81dIjRhSzq8nq9MZrvEr6opejGqllINIQ2sz7CwqbEoJ6cIgt1eojg7Q7Yo9ZYtlzCW9djDrWj1ZUzVqOF9LxqtaUtDKYTLIonKsh/ISQ1SDOftj/7xC5lQezUPF84i5zqlpKmSfY71CVxldii4b1YfN1xNZia6s7uhZIR13TZ9h7B/RC15OzHRhjYmVDWXq6N/jMoXZ6AoKmYUCXysc+Lagqq8RDLp+AWrAU9ILlQoQ/CHKunX41pHGdnNWcOMgG+eiydfYH2CaCcHnrSYeuHgTPw7fVUoKbJm8ORnL7SSP7LioKr9HumMW5vuiRo+9KVNz94EmWMGiAYPcDcY="
+    - secure: "vrfOY41CE4qwI1A4B3XqNyGXYuh6fT0W493dQmRLEVxufIdrzhbOehEYfDgQdZRiqw+2UJ6Yrsp6Y+wEpb75BAF34244pugEX8vMGD6bF6dQn1jqYIjLXs1L1VXIXJnqpN2m1P9D6ZzlD3QPeaWWDNRou31/ZhGvcde+zbcPOirwg2xjSmScZO+1dYlb0FFl2bRb2BmKP5r2xuc+WvAk2diuqbuII5Kzw9uA4B98ZivBzJNMOm7XJwHylpA1E5RhGUPVoSC+bG/2e0ObNJB0sXZOUPhaKgCcyKmjyZGKGHwvr58Vc2iTDvgTsJkxIwb5MBHNlIRti3OLCyWsZ81m+ePpVvdmkuqxJZ34KZS7ha4/E6bERhAtOCZoKXEYgszzd07ZYH9AXKoud3LmllKxTsM8hbnQq2u7Xge6X886TrUhvhj7k+vYD7DL/eUrFsnjeWFTvOKe3kJHnTokHpCCYNAjdvsl/ofiCTgkKXaBNP/EGywjQIPXKC5A4hRmaj71+X0shZr7YqTWlBM4aQ606aGFF57pm47urA1JJMv9WSRCQ65zQdSswp7WpufYFPdKNYG7Cx+kcxZIyEPzgq/lBnlae7y/bcPE4TIz2JkFFuE93+jTpBkPs/6yUyTdpsKHhL/hhnKnnASJlqtMzP3OOKnT2zvhkDSU+JTy7ebGM14="
+
+after_success:
+  - node publish.js --id 'success' --message 'success'
+  - node publish.js --id 'fail' --message ''
+
+after_failure:
+  - node publish.js --id 'fail' --message 'fail'
+

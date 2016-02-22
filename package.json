@@ -24,6 +24,8 @@
   "devDependencies": {},
   "dependencies": {
     "bluebird": "^3.3.1",
-    "github": "^0.2.4"
+    "github": "^0.2.4",
+    "lodash": "latest",
+    "minimist": "latest"
   }
 }
