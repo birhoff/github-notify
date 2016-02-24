@@ -6,6 +6,10 @@ var token = process.env.GH_TOKEN,
 
 var reporter = require('./index')(token, repoSlug, number);
 
-reporter.report(argv.id, argv.message);
+if (argv.hasOwnProperty('clear')) {
+    reporter.clear();
+} else {
+    reporter.report(argv.id, argv.message);
+}
 
 

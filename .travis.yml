@@ -12,6 +12,7 @@ env:
 
 before_script:
   - npm install mocha
+  - node publish.js --clear
 
 after_success:
   - node publish.js --id 'success' --message 'success'
